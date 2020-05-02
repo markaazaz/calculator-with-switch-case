@@ -1,0 +1,48 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+  begin:
+  int num1,num2,selection;
+  string operating;
+  float result;
+  cout<<"===========================================\n";
+  cout<<"==             Calculator                ==\n";
+  cout<<"===========================================\n";
+  cout<<"Choose number (1/4):\n";
+  cout<<"1. Plus (+)\n";
+  cout<<"2. Minus (0)\n";
+  cout<<"3. Division (/)\n";
+  cout<<"4. Multiply (*)\n";
+
+  cout<<"Input your number :";
+  cin>>selection;
+  cout<<"Input First Number:";
+  cin>>num1;
+  cout<<"Input Second Number:";
+  cin>>num2;
+
+switch (selection) {
+  case 1: result = num1 + num2;
+          operating = '+';
+          break;
+
+  case 2: result = num1 * num2;
+          operating = '*';
+          break;
+
+  case 3: result = num1 / num2;
+          operating = '/';
+          break;
+
+  case 4: result = num1 - num2;
+          operating = '-';
+          break;
+  default :
+  cout<<"No Search Results Found\n";
+  system("cls");
+  goto begin;
+}
+  cout<<"Result of\n"<<num1 <<operating <<num2 <<"=" <<result;
+  return 0;
+}
