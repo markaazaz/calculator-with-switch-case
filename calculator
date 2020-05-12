@@ -11,7 +11,7 @@ int main(){
   cout<<"===========================================\n";
   cout<<"Choose number (1/4):\n";
   cout<<"1. Plus (+)\n";
-  cout<<"2. Minus (0)\n";
+  cout<<"2. Minus (-)\n";
   cout<<"3. Division (/)\n";
   cout<<"4. Multiply (*)\n";
 
@@ -27,16 +27,16 @@ switch (selection) {
           operating = '+';
           break;
 
-  case 2: result = num1 * num2;
-          operating = '*';
+  case 2: result = num1 - num2;
+          operating = '-';
           break;
 
   case 3: result = num1 / num2;
           operating = '/';
           break;
 
-  case 4: result = num1 - num2;
-          operating = '-';
+  case 4: result = num1 * num2;
+          operating = '*';
           break;
   default :
   cout<<"No Search Results Found\n";
